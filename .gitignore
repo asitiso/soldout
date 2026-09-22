@@ -4,3 +4,4 @@ artifacts/
 *.log
 .pnpm-store/
 .vercel/
+.env*
