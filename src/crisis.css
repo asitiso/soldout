@@ -1,0 +1,100 @@
+.crisis-board {
+  padding: 26px;
+  background: #edf2e8;
+  border: 1px solid #d8e0d1;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+.crisis-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.crisis-badge {
+  background: #fff9eb;
+  color: #856733;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.crisis-board h2 {
+  font-size: 30px;
+  margin: 18px 0 8px;
+  color: #31574c;
+}
+.crisis-board p {
+  line-height: 1.7;
+  color: #647568;
+  font-size: 13px;
+}
+.crisis-timeline {
+  display: flex;
+  gap: 5px;
+  margin: 22px 0;
+}
+.crisis-timeline span {
+  height: 7px;
+  flex: 1;
+  border-radius: 4px;
+  background: #dce3d5;
+}
+.crisis-timeline .past {
+  background: #a6bba4;
+}
+.crisis-timeline .current {
+  background: #bd8754;
+}
+.crisis-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.crisis-metrics > div {
+  padding: 16px 10px;
+  background: #fbfcf5;
+  border-radius: 12px;
+}
+.crisis-metrics small {
+  display: block;
+  font-size: 11px;
+  color: #7c8877;
+}
+.crisis-metrics b {
+  display: block;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #31574c;
+}
+.crisis-board .crisis-footnote {
+  font-size: 11px;
+}
+.crisis-forecast {
+  border-top: 1px solid #d5dfcf;
+  padding-top: 18px;
+  margin-top: 18px;
+}
+.crisis-forecast > span {
+  font-size: 11px;
+  color: #967747;
+  font-weight: 700;
+}
+.crisis-forecast h3 {
+  margin: 9px 0;
+  font-size: 18px;
+}
+.crisis-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+@media (max-width: 650px) {
+  .crisis-board {
+    padding: 18px;
+  }
+  .crisis-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

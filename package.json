@@ -1,0 +1,30 @@
+{
+  "name": "sold-out-pharmacy",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --configLoader native",
+    "build": "vite build --configLoader native",
+    "preview": "vite preview --host 127.0.0.1 --configLoader native",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node scripts/browser-check.cjs",
+    "test:building": "node scripts/building-check.cjs",
+    "test:crisis": "node scripts/crisis-check.cjs",
+    "test:crowd": "node scripts/crowd-check.cjs",
+    "test:browsing": "node scripts/browsing-check.cjs",
+    "test:movement": "node scripts/movement-check.cjs",
+    "test:audio": "node scripts/audio-check.cjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "prettier": "3.6.2",
+    "vite": "6.3.6"
+  }
+}
